@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import EscapeComponent from "./component/EscapeComponent";
+import UnescapeComponent from "./component/UnescapeComponent";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center", padding: "20px" }}>
+      <h1>String Escape/Unescape App</h1>
+      <EscapeComponent />
+      <UnescapeComponent />
     </div>
   );
-}
+};
 
 export default App;
